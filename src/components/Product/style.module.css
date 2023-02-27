@@ -1,6 +1,44 @@
 .container {
-    border: 2px solid black;
-    margin: 5px;
-    padding: 5px;
-    
+  border: none;
+  background-color: #c8edf2;
+  margin: 5px;
+  padding: 5px;
+  color: rgb(50, 50, 50);
+  border-radius: 15px 0;
+}
+
+.product_title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product_price {
+  color: rgb(57, 57, 57);
+  text-decoration: line-through;
+}
+
+.product_price_disc {
+  color: red;
+  font-weight: 700;
+}
+
+.price_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_add,
+.btn_del {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn_del {
+  background-color: #b6000fd7;
+}
+
+.btn_add {
+  background-color: #009999;
 }
