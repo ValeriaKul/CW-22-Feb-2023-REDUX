@@ -6,22 +6,52 @@
   flex-wrap: nowrap;
   flex-direction: row;
   margin: 5px;
-}
-.item_id,
-.item_count {
-  margin: 5px;
+  min-width: min-content;
 }
 
-.item_count {
+.item_count,
+.price,
+.total,
+.btn_del {
   text-align: center;
 }
 
-.count_container {
+.count_container,
+.btn_container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.id_container,
-.count_container {
+.btn_container {
+  justify-content: flex-end;
+}
+
+.count_container,
+.price_container {
   width: 20%;
+}
+.total_container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_container {
+  width: 10%;
+}
+.btn_add,
+.btn_del {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn_del {
+  background-color: #b6000fd7;
+}
+
+.btn_add {
+  background-color: #009999;
 }

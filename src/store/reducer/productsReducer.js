@@ -1,3 +1,20 @@
+const ADD = "ADD";
+const DELETE = "DELETE";
+
+export const addProductAction = (title, price, discount) => {
+  return {
+    type: ADD,
+    payload: {
+      id: Date.now(),
+      title,
+      price,
+      discount,
+    },
+  };
+};
+
+export const deleteProductAction = (payload) => ({ type: DELETE, payload });
+
 const products = [
   { id: 1, title: "product 1", price: 10, discount: 3 },
   { id: 2, title: "product 2", price: 20, discount: 4 },
@@ -5,9 +22,9 @@ const products = [
 ];
 
 export const productsReducer = (state = products, action) => {
-  if (action.type === "ADD") {
+  if (action.type === ADD) {
     return [...state, action.payload];
-  } else if (action.type === "DELETE") {
+  } else if (action.type === DELETE) {
     return state.filter(({ id }) => id !== action.payload);
   } else {
     return state;

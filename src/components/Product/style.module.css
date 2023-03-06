@@ -1,10 +1,14 @@
 .container {
   border: none;
-  background-color: #c8edf2;
-  margin: 5px;
+  background-color: #f1fbfd;
+  margin-top: 10px;
   padding: 5px;
   color: rgb(50, 50, 50);
-  border-radius: 15px 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  -moz-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  width: 100%;
 }
 
 .product_title {
@@ -24,21 +28,19 @@
 
 .price_container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: space-between;
 }
 
-.btn_add,
+/* .btn_add,
 .btn_del {
   border: none;
   border-radius: 5px;
   color: white;
   cursor: pointer;
-}
+} */
 
-.btn_del {
-  background-color: #b6000fd7;
-}
-
-.btn_add {
-  background-color: #009999;
+.btns_container {
+  display: flex;
+  justify-content: space-around;
 }

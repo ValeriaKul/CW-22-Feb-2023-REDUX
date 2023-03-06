@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "descr": " ",
+      "price": 199,
+      "discount": 5
+    },
+    {
+      "id": 2,
+      "title": "Product 3",
+      "descr": " ",
+      "price": 249,
+      "discount": 3
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "descr": " ",
+      "price": 299,
+      "discount": 8
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "descr": " ",
+      "price": 199,
+      "discount": 5
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "descr": " ",
+      "price": 99,
+      "discount": 3
+    }
+  ]
+}

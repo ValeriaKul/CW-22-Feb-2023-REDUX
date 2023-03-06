@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap");
+
 p {
-    margin: 5px;
+  margin: 5px;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Amatic SC", cursive; */
+  font-family: "Quicksand", sans-serif;
+  /* font-family: "Satisfy", cursive; */
+}
+
+.btn_del {
+  /* background-color: #b6000fd7; */
+  color: rgb(189, 44, 44);
+  cursor: pointer;
+}
+
+.btn_add {
+  color: #009999;
+  cursor: pointer;
 }

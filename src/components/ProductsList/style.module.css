@@ -1,0 +1,18 @@
+.product_list {
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 390px;
+  background-color: #c8edf2;
+  margin: 10px;
+  padding: 0 10px 10px 10px;
+  border-radius: 15px 0;
+  -webkit-box-shadow: 9px -7px 13px 2px rgba(34, 60, 80, 0.38);
+  -moz-box-shadow: 9px -7px 13px 2px rgba(34, 60, 80, 0.38);
+  box-shadow: 9px -7px 13px 2px rgba(34, 60, 80, 0.38);
+}

@@ -2,11 +2,20 @@
   padding: 10px;
   background-color: #c8edf2;
   border-radius: 10px 0;
-  margin: 5px;
+  margin-top: 10px;
+  height: fit-content;
+  font-size: small;
+  min-width: 380px;
+  -webkit-box-shadow: 9px -7px 13px 2px rgba(34, 60, 80, 0.38);
+  -moz-box-shadow: 9px -7px 13px 2px rgba(34, 60, 80, 0.38);
+  box-shadow: 9px -7px 13px 2px rgba(34, 60, 80, 0.38);
 }
 
-.basket {
+.basket,
+.total_basket_cont {
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
 }
 
 .basket_item {
@@ -18,16 +27,13 @@
   flex-direction: row;
   margin: 5px;
 }
-.item_id,
-.item_count {
-  margin: 5px;
-}
 
-.item_count {
-  text-align: center;
+.title_container {
+  width: 21%;
 }
-
-.id_container,
+.price_container {
+  width: 19%;
+}
 .count_container {
-  width: 20%;
+  width: 25%;
 }
