@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addProductAction } from "../../store/reducer/productsReducer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import s from "./style.module.css";
 
 export default function AddProduct() {
@@ -17,6 +19,7 @@ export default function AddProduct() {
       price.style.border = "2px solid red";
     } else {
       dispatch(addProductAction(title.value, price.value, discount.value));
+      toast("Product added!");
       title.value = "";
       price.value = "";
       discount.value = "";
@@ -33,6 +36,7 @@ export default function AddProduct() {
         <input type="number" name="discount" placeholder="discount" />
         <button className={s.btn_add}>Add</button>
       </form>
+      <ToastContainer />
     </div>
   );
 }

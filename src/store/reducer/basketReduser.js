@@ -1,8 +1,12 @@
+import {  toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const getById = (state, find_id) => state.find(({ id }) => id === find_id);
 const ADD = "BASKET_ADD";
 const INCREMENT = "BASKET_INCREMENT";
 const DECREMENT = "BASKET_DECREMENT";
 const REMOVE = "REMOVE";
+
 
 export const basketAddAction = (id) => ({ type: ADD, payload: id });
 export const basketIncrementAction = (payload) => ({
@@ -18,6 +22,7 @@ export const basketRemoveAction = (payload) => ({ type: REMOVE, payload });
 export const basketReduser = (state = [], action) => {
   if (action.type === ADD) {
     const target = getById(state, action.payload);
+    toast("Added to basket!");
     if (target === undefined) {
       return [...state, { id: action.payload, count: 1 }];
     } else {

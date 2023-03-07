@@ -1,6 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { basketAddAction } from "../../store/reducer/basketReduser";
 import { deleteProductAction } from "../../store/reducer/productsReducer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import s from "./style.module.css";
 
 export default function Product({ id, title, price, discount }) {
@@ -22,9 +25,10 @@ export default function Product({ id, title, price, discount }) {
         ></i>
         <i
           className="fa-solid fa-basket-shopping btn_add"
-          onClick={() => dispatch({ type: "BASKET_ADD", payload: id })}
+          onClick={() => dispatch(basketAddAction(id))}
         ></i>
       </div>
+      <ToastContainer />
     </div>
   );
 }

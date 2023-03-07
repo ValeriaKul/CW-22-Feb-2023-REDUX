@@ -1,7 +1,9 @@
+
 const ADD = "ADD";
 const DELETE = "DELETE";
 
 export const addProductAction = (title, price, discount) => {
+
   return {
     type: ADD,
     payload: {
